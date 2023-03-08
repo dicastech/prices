@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:3000/prices" method="post" id="price-form">
+        <label for="rental_price"></label>
+        <input type="number" name="rental_price" id="rental_price">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+    $('#price-form').on('submit', (event) =>{
+        
+        var $inputs = $('#price-form input[type!=submit]');
+
+        var values = {};
+
+        $inputs.each(function() {
+            values[this.name] = $(this).val();
+        });
+
+        console.log(values);
+
+        var url = $('#price-form').attr('action');
+
+        fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(values) }).then((response) => {
+            console.log(response);
+        })
+
+        event.preventDefault();
+    })
+</script>
+</html>

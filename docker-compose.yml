@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  backend:
+    build: ./prices-rb
+    command: puma ./prices-rb/config.ru -p 3000
+    volumes:
+      - .:/backend
+    ports:
+      - "3000:3000"
+    networks:
+      - hellodocker
+
+  frontend:
+    build: ./frontend
+    command: python3 -m http.server 9000
+    volumes:
+      - .:/frontend
+    ports:
+      - "9000:9000"
+    depends_on:
+      - backend
+    networks:
+      - hellodocker
+
+networks:
+  hellodocker:
