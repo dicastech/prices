@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+}
+
+.header h1{
+    position: absolute;
+    width: 626px;
+    height: 72px;
+    left: 316px;
+    top: 39px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+.header{
+    position: absolute;
+    width: 100%;
+    height: 950px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #FFD332 0%, rgba(255, 211, 50, 0.7) 20.31%, rgba(252, 233, 165, 0.6) 100%);
+    box-shadow: 20px 0px 10px rgba(0, 0, 0, 0,4);
+}
+.descricao_form{
+    position: absolute;
+    width: 893px;
+    height: 48px;
+    left: 230px;
+    top: 197px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+.form{
+    background: #ffd332;
+    width: 420px;
+    height: 570px;
+    border-radius: 30px;
+    margin: 0 auto;
+    position: absolute;
+    left: 430px;
+    top: 292px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+}
+.form form{
+    width: 380px;
+    height: 466px;
+}
+.campo_price{
+    display: block;
+    width: 320px;
+    margin: 22px 0;
+    text-align: right;
+    padding: 8px;
+}
+.campo_price label{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    padding: 50px 20px;
+}
+.campo_price input:not([type="submit"]){
+    width: 130px;
+    height: 18px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+.button input[type="submit"]{
+    position: absolute;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    width: 270px;
+    height: 30px;
+    left: 60px;
+    top: 520px;
+    padding: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+.button input[type="submit"]:hover{
+    background: #fcf7e5;
+    transform: scale(1.1);
+    transition: transform 0.7s;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);;
+}
+.button input[type="submit"]:active{
+    background-color: #ccc;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+input:focus{
+    outline: none;
+}
+/*tabela*/
+.table h3{
+    position: absolute;
+    width: 900px;
+    height: 48px;
+    left: 280px;
+    top: 988px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+}
+.table table{
+    position: absolute;
+    width: 706px;
+    height: 400px;
+    left: 300px;
+    top: 1071px;
+    border-collapse: collapse;
+}
+.table table th, td{
+    border: 1px solid black;
+    padding: 10px;
+    width: 80px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.preco_final{
+    position: absolute;
+    width: 580px;
+    height: 36px;
+    left: 365px;
+    top: 1580px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 1760px;
+    background:#FFD332;
+}
+.footer h1{
+    width: 590px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0px 0px 350px;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin: 70px 0px 0px 550px;
+}
+.logo p{
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    margin: -25px 0px 0px 630px;
+    width: 150px;
+    height: 23px;
+}
