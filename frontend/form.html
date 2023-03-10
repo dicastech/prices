@@ -1,17 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Makers</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="http://localhost:3000/prices" method="post" id="price-form">
-        <label for="rental_price"></label>
-        <input type="number" name="rental_price" id="rental_price">
-        <input type="submit" value="Enviar">
-    </form>
+    <div class="header">
+        <h1>Descubra a média para se viver em Araguaína</h1>
+    </div>
+    <hr>
+    <main>
+        <div class="corpo_principal">
+            <div class="descricao_form">
+                <h3>De acordo com seus custos, reponda o custo que você possue em cada campo abaixo para obter o valor da média do quando recisará para viver em Araguaína</h3>
+            </div>
+            <div class="form">
+                <form action="http://localhost:3000/prices" method="post" id="price-form">
+                    <div class="campo_price">
+                        <label for="rental_price">Moradia</label>
+                        <input type="number" name="rental_price" id="rental_price" placeholder="Digite um valor"><br>
+                    </div>
+                    <div class="campo_price">
+                        <label for="water_price">Água</label>
+                        <input type="number" name="water_price" id="water_price" placeholder="Digite um valor"><br>
+                    </div>
+                    <div class="campo_price">
+                        <label for="energy_price">Energia</label>
+                        <input type="number" name="energy_price" id="energy_price" placeholder="Digite um valor"><br>
+                    </div>
+                    <div class="campo_price">
+                        <label for="internt_price">Internet</label>
+                        <input type="number" name="internt_price" id="internt_price" placeholder="Digite um valor"><br>
+                    </div>
+                    <div class="campo_price">
+                        <label for="marketplace_price">Supermecado</label>
+                        <input type="number" name="marketp lace_price" id="marketplace_price" placeholder="Digite um valor"><br>
+                    </div>
+                    <div class="campo_price">
+                        <label for="transport_price">Transporte</label>
+                        <input type="number" name="transport_price" id="transport_price" placeholder="Digite um valor"><br>
+                    </div>
+                    <div class="campo_price">
+                        <label for="leisure_price">Lazer</label>
+                        <input type="number" name="leisure_price" id="leisure_price" placeholder="Digite um valor"><br>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Enviar dados">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="table">
+            <h3>Observe os valores obtidos na tabela a baixo</h3>
+            <table>
+                <tr>
+                    <th>Gastos</th>
+                    <th>Média</th>
+                    <th>Valor máximo</th>
+                    <th>Valor mínimo</th>
+                </tr>
+                <tr>
+                    <th>Moradia</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Água</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Energia</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Internet</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Supermecado</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Transporte</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Lazer</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="preco_final">
+                <p>A soma da sua média é {valor} reais</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <h1>Nosos dados são gerados com base nos valores coletados pelos usuários que responderam estas perguntas</h1>
+        <div class="logo">
+            <img src="" alt="img-logo">
+            <p>The Makers</p>
+        </div>
+    </footer>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
