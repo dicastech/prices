@@ -7,12 +7,12 @@ class App < Sinatra::Base
 
   get '/prices' do
     rental_price = @@data.map { |row| row[:rental_price].to_f }
-    water_price = @@data.map { |row| row[:rental_price].to_f }
-    energy_price = @@data.map { |row| row[:rental_price].to_f }
-    internt_price = @@data.map { |row| row[:rental_price].to_f }
-    marketplace_price = @@data.map { |row| row[:rental_price].to_f}
-    transport_price = @@data.map { |row| row[:rental_price].to_f }
-    leisure_price = @@data.map { |row| row[:rental_price].to_f }
+    water_price = @@data.map { |row| row[:water_price].to_f }
+    energy_price = @@data.map { |row| row[:energy_price].to_f }
+    internet_price = @@data.map { |row| row[:internet_price].to_f }
+    marketplace_price = @@data.map { |row| row[:marketplace_price].to_f}
+    transport_price = @@data.map { |row| row[:transport_price].to_f }
+    leisure_price = @@data.map { |row| row[:leisure_price].to_f }
 
     response = {
       avg_rental_price: rental_price.sum / rental_price.count,
