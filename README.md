@@ -28,7 +28,7 @@ curl --location --request POST 'http://localhost:3000/prices' \
 
 Enviando dados para a API via frontend:
 
-- http://localhost:9000/frontend/form.html
+- http://localhost:9000/frontend/
 
 Lendo dados da API via CURL:
 
